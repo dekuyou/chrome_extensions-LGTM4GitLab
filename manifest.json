@@ -1,6 +1,6 @@
 {
-  "name": "LGTM",
-  "version": "1.0.0",
+  "name": "LGTM4GitLab",
+  "version": "0.0.1",
   "manifest_version": 2,
   "description": "Looks Good To Me.",
   "permissions": [
@@ -11,12 +11,12 @@
       "19": "./images/icon19.png",
       "38": "./images/icon38.png"
     },
-    "default_title": "LGTM",
+    "default_title": "LGTM4GitLab",
     "default_popup": "./popup/popup.html"
   },
   "content_scripts": [
     {
-      "matches": ["https://github.com/*"],
+      "matches": ["https://gitlab.com/*"],
       "js":      ["./lib/jquery-2.0.3.min.js", "./content/content.js"],
       "run_at":  "document_end"
     }
